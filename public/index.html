@@ -2,39 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>SunChamps E-Tail/title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3004/1/style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3003/styles.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/1/style.css">
+    <title>SunChamps E-Tail</title>
   </head>
   <body>
-    <div id="NavBar"></div>
-    <div id="ProductOverview"></div>
-    <div id="Checkout"></div>
+    <div id="navigation-bar" class='navigation-bar'></div>
+    <div id="Product-Checkout-Container">
+        <div id="product-overview"></div>
+        <div id="Checkout"></div>
+    </div>
     <div id="Reviews"></div>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <!-- Why are there two of the react-dom.development scripts? -->
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script>
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-    <script>
-      ReactDOM.render(
-        React.createElement(NavBar),
-        document.getElementById('NavBar')
-      );
-      ReactDOM.render(
-        React.createElement(ProductOverview),
-        document.getElementById('ProductOverview')
-      );
-      ReactDOM.render(
-        React.createElement(Checkout),
-        document.getElementById('Checkout')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('Reviews')
-      );
-    </script>
+    <script src="/1/lib/react.development.js"></script>
+    <script src="/1/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3004/1/bundle.js"></script>
+    <script src="http://localhost:3003/app.bundle.js"></script>
+    <script src="http://localhost:3002/1/bundle.js"></script>
+    <script src="http://localhost:3001/1/bundle.js"></script>
   </body>
 </html>
